@@ -1,0 +1,26 @@
+[Unit]
+Description=catTHIS's distributed currency daemon
+After=network.target
+
+[Service]
+User=catthis
+Group=catthis
+
+Type=forking
+PIDFile=/var/lib/catthisd/catthisd.pid
+
+ExecStart=/usr/bin/catthisd -daemon -pid=/var/lib/catthisd/catthisd.pid \
+          -conf=/etc/catthis/catthis.conf -datadir=/var/lib/catthisd
+
+ExecStop=-/usr/bin/catthis-cli -conf=/etc/catthis/catthis.conf \
+         -datadir=/var/lib/catthisd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

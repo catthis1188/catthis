@@ -1,0 +1,26 @@
+# /etc/conf.d/catthisd: config file for /etc/init.d/catthisd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/catthis/catthis.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/catthisd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/catthisd.pid"
+
+# Where to write catthisd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/catthisd"
+
+# User and group to own catthisd process
+#BITCOIND_USER="catthis"
+#BITCOIND_GROUP="catthis"
+
+# Path to catthisd executable
+#BITCOIND_BIN="/usr/bin/catthisd"
+
+# Nice value to run catthisd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
