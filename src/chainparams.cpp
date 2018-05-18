@@ -54,12 +54,13 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (1, uint256("0x24fd834bab2f741c0079847cf7e759a4301d0a1952d0c4c5cfaa54f72e03f4e3"));
+    (1, uint256("0x5325f7b15623f60364f309b30f6e3212f5c8209953cf67c8cda3b2d4813dbf36"))
+    (25, uint256("0x00016ce5afa87cfd85603b393639025d11f3202fc2cff62fdefd405b40fbfaf5"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1526526846, // * UNIX timestamp of last checkpoint block
-    2,          // * total number of transactions between genesis and last checkpoint
+    1526634631, // * UNIX timestamp of last checkpoint block
+    26,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -136,13 +137,23 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0xd575035aba8469fd7463f28c33105e4dfca16d7d1f851bfd05c5c23dd960d088"));
 
         // DNS Seeding
-        vSeeds.push_back(CDNSSeedData("149.28.169.138", "149.28.169.138"));
-        vSeeds.push_back(CDNSSeedData("149.28.135.95", "149.28.135.95"));
+        vSeeds.push_back(CDNSSeedData("206.189.196.51", "206.189.196.51"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.247", "49.236.200.247"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.248", "49.236.200.248"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.249", "49.236.200.249"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.250", "49.236.200.250"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.251", "49.236.200.251"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.252", "49.236.200.252"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.253", "49.236.200.253"));
         vSeeds.push_back(CDNSSeedData("149.28.75.45", "149.28.75.45"));
         vSeeds.push_back(CDNSSeedData("149.28.207.136", "149.28.207.136"));
+        vSeeds.push_back(CDNSSeedData("149.28.169.138", "149.28.169.138"));
+        vSeeds.push_back(CDNSSeedData("149.28.135.95", "149.28.135.95"));
+        
+        
 
         // catTHIS addresses start with 'G'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 38);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         // catTHIS script addresses start with '3'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 6);
         // catTHIS private keys start with 'K'
@@ -219,10 +230,18 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
         // DNS Seeding
-        vSeeds.push_back(CDNSSeedData("149.28.169.138", "149.28.169.138"));
-        vSeeds.push_back(CDNSSeedData("149.28.135.95", "149.28.135.95"));
+        vSeeds.push_back(CDNSSeedData("206.189.196.51", "206.189.196.51"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.247", "49.236.200.247"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.248", "49.236.200.248"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.249", "49.236.200.249"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.250", "49.236.200.250"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.251", "49.236.200.251"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.252", "49.236.200.252"));
+        vSeeds.push_back(CDNSSeedData("49.236.200.253", "49.236.200.253"));
         vSeeds.push_back(CDNSSeedData("149.28.75.45", "149.28.75.45"));
         vSeeds.push_back(CDNSSeedData("149.28.207.136", "149.28.207.136"));
+        vSeeds.push_back(CDNSSeedData("149.28.169.138", "149.28.169.138"));
+        vSeeds.push_back(CDNSSeedData("149.28.135.95", "149.28.135.95"));
 
         // Testnet catTHIS addresses start with 'g'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 98);
