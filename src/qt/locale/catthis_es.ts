@@ -4555,7 +4555,7 @@ por ejemplo: alertnotify=echo %%s | mail -s "catTHIS Alert" admin@foo.com
         <translation>Este mensaje de ayuda</translation>
     </message>
     <message>
-        <source>This is experimental software.</source>
+        <source> </source>
         <translation>Esto es software experimental.</translation>
     </message>
     <message>

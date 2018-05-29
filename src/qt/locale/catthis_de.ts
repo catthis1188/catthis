@@ -3946,7 +3946,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Dieser Hilfetext</translation>
     </message>
     <message>
-        <source>This is experimental software.</source>
+        <source> </source>
         <translation>Dies ist experimentelle Software.</translation>
     </message>
     <message>

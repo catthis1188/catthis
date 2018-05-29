@@ -6275,8 +6275,8 @@ for example: alertnotify=echo %%s | mail -s &quot;catTHIS Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>This is experimental software.</source>
-        <translation type="unfinished">This is experimental software.</translation>
+        <source> </source>
+        <translation type="unfinished"> </translation>
     </message>
     <message>
         <location line="+1"/>

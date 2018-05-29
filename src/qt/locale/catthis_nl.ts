@@ -2781,7 +2781,7 @@ MultiSend: %1</translation>
         <translation>SwiftTX opties:</translation>
     </message>
     <message>
-        <source>This is experimental software.</source>
+        <source> </source>
         <translation>Dit is experimentele software.</translation>
     </message>
     <message>

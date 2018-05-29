@@ -4603,8 +4603,8 @@ for example: alertnotify=echo %%s | mail -s "catTHIS Alert" admin@foo.com
         <translation>This help message</translation>
     </message>
     <message>
-        <source>This is experimental software.</source>
-        <translation>This is experimental software.</translation>
+        <source> </source>
+        <translation> </translation>
     </message>
     <message>
         <source>This is intended for regression testing tools and app development.</source>

@@ -3188,7 +3188,7 @@ Please check the address and try again.</source>
         <translation>Это справочное сообщение</translation>
     </message>
     <message>
-        <source>This is experimental software.</source>
+        <source> </source>
         <translation>Это экспериментальное программное обеспечение.</translation>
     </message>
     <message>
