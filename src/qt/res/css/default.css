@@ -155,7 +155,7 @@ QToolTip {
 /****************************************************************************************/
 
 QLabel { /* Base Text Size & Color */
-	font-size:12px;
+	font-size:14px;
 	color:#333333;
 }
 
@@ -215,7 +215,7 @@ QPushButton { /* Global Button Style */
 	border-color: #0f7f12;
 	border-radius: 2px;
 	color:#ffffff;
-	font-size:12px;
+	font-size:14px;
 	font-weight:bold;
 	padding-left:25px;
 	padding-right:25px;
@@ -317,7 +317,7 @@ QComboBox::indicator {
 QAbstractSpinBox {
 	padding: 3px 5px 3px 5px;
 	background: #fcfcfc;
-	font-size: 12px;
+	font-size: 14px;
 	min-height: 25px;
 	outline: 0;
 	padding: 3px;
@@ -357,7 +357,7 @@ QAbstractSpinBox::down-arrow {
 QValueComboBox {
 	padding: 3px 5px 3px 5px;
 	background: #fcfcfc;
-	font-size: 12px;
+	font-size: 14px;
 	min-height: 25px;
 	outline: 0;
 	padding: 3px;
@@ -384,7 +384,7 @@ QHeaderView::section { /* Table Header Sections */
 	color:#fff;
 	min-height:25px;
 	font-weight:bold;
-	font-size:11px;
+	font-size:14px;
 	border:0;
 	border-right:1px solid #fff;
 	padding-left:5px;
@@ -417,7 +417,7 @@ QHeaderView::section:last {
 
 QTableView::item { /* Table Item */
 	background-color:#fcfcfc;
-	font-size:12px;
+	font-size:14px;
 }
 
 QTableView::item:selected { /* Table Item Selected */
@@ -959,7 +959,7 @@ QWidget .QFrame#frame_RecentTransactions .QLabel#labelTransactionsStatus { /* Re
 
 QWidget .QFrame#frame_RecentTransactions QListView { /* Transaction List */
 	font-weight:normal;
-	font-size:12px;
+	font-size:14px;
 	max-width:369px;
 	margin-top:12px;
 	margin-left:0px; /* CSS Voodoo - set to -66px to hide default transaction icons */
@@ -1068,7 +1068,7 @@ QStackedWidget#SendCoinsEntry .QToolButton { /* General Settings for Pay To Icon
 	border-color: #006200;
 	border-radius: 2px;
 	color:#ffffff;
-	font-size:12px;
+	font-size:14px;
 	font-weight:bold;
 	margin: 2px;
 }
