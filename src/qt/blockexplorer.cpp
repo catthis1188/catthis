@@ -249,7 +249,7 @@ std::string BlockToString(CBlockIndex* pBlock)
     std::string BlockContent = makeHTMLTable(BlockContentCells, sizeof(BlockContentCells) / (2 * sizeof(std::string)), 2);
 
     std::string Content;
-    Content += "<h2><a class=\"nav\" href=";
+    Content += "<h2 style='color:#000000;'><a class=\"nav\" href=";
     Content += itostr(pBlock->nHeight - 1);
     Content += ">◄&nbsp;</a>";
     Content += _("Block");
@@ -421,7 +421,7 @@ std::string AddressToString(const CBitcoinAddress& Address)
     TxContent += "</table>";
 
     std::string Content;
-    Content += "<h1 style='color:#ffffff;'>" + _("Transactions to/from") + "&nbsp;<span>" + Address.ToString() + "</span></h1>";
+    Content += "<h1 style='color:#000000;'>" + _("Transactions to/from") + "&nbsp;<span>" + Address.ToString() + "</span></h1>";
     Content += TxContent;
     return Content;
 }
@@ -550,7 +550,7 @@ void BlockExplorer::setBlock(CBlockIndex* pBlock)
 
 void BlockExplorer::setContent(const std::string& Content)
 {
-    QString CSS = "body {font-size:12px; color:#f8f6f6; bgcolor:#fafafa;}\n a, span { font-family: monospace; }\n span.addr {color:#fafafa; font-weight: bold;}\n table tr td {padding: 3px; border: 1px solid black; background-color: #fafafa;}\n td.d0 {font-weight: bold; color:#f8f6f6;}\n h2, h3 { white-space:nowrap; color:#fafafa;}\n a { color:#88f6f6; text-decoration:none; }\n a.nav {color:#fafafa;}\n";
+    QString CSS = "body {font-size:14px; color:#000000; bgcolor:#fafafa;}\n a, span { font-family: monospace; }\n span.addr {color:#000000; font-weight: bold;}\n table tr td {padding: 3px; border: 1px solid black; background-color: #fafafa;}\n td.d0 {font-weight: bold; color:#000000;}\n h2, h3 { white-space:nowrap; color:#000000;}\n a { color:#000000; text-decoration:none; }\n a.nav {color:#fafafa;}\n";
     QString FullContent = "<html><head><style type=\"text/css\">" + CSS + "</style></head>" + "<body>" + Content.c_str() + "</body></html>";
     // printf(FullContent.toUtf8());
 
